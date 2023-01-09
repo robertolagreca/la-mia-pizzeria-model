@@ -17,13 +17,15 @@ namespace LaMiaPizzeriaModel.Utils
 
             pizzas = new List<Pizza>();
 
-            Pizza pizza1 = new Pizza(0, "~/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Margherita", "Sugo, mozzarella", 4.99f);
-            Pizza pizza2 = new Pizza(0, "~/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Wusterl", "Sugo, mozzarella, wusterl", 5.99f);
-            Pizza pizza3 = new Pizza(0, "~/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Americana", "Sugo, mozzarella, wusterl, patatine", 6.99f);
+            Pizza pizza1 = new Pizza(1, "wwwroot/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Margherita", "Sugo, mozzarella", 4.99f);
+            Pizza pizza2 = new Pizza(2, "~/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Wusterl", "Sugo, mozzarella, wusterl", 5.99f);
+            Pizza pizza3 = new Pizza(3, "~/img/fernando-andrade-_P76trHTWDE-unsplash.jpg", "Americana", "Sugo, mozzarella, wusterl, patatine", 6.99f);
+            Pizza pizza4 = new Pizza(4, "~/img/", "Salamino", "Sugo, mozzarella, salamino piccante", 5.99f);
 
             pizzas.Add(pizza1);
             pizzas.Add(pizza2);
             pizzas.Add(pizza3);
+            pizzas.Add(pizza4);
 
             return pizzas;
 
