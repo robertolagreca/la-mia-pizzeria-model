@@ -43,6 +43,12 @@ else
                                 <td class="title">@pizza.Name</td>
                                 <td class="description">@pizza.Description</td>
                                 <td class="price">@pizza.Price</td>
+
+                                <td>
+                                    <a class="btn btn-primary btn-danger" href="@Url.Action("Details", "Pizza", new { id = @pizza.Id } )" role="button">Dettagli</a>
+                                </td>
+
+
                               <!--  <td>
                                     <a class="btn btn-primary" href="@@Url.Action("Details", "Post", new { id = @@pizza.Id } )" role="button">Dettagli</a>
                                         </td>-->

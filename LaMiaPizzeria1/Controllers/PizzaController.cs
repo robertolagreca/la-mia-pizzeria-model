@@ -12,5 +12,21 @@ namespace LaMiaPizzeriaModel.Controllers
             List<Pizza> listPizzas = PizzaData.GetPizzas();
             return View("Index" , listPizzas);
         }
+
+        public IActionResult Details(int id)
+        {
+            List<Pizza> listPizzas = PizzaData.GetPizzas();
+
+            foreach (Pizza pizza in listPizzas)
+            {
+                if (pizza.Id == id)
+                {
+                    return View(pizza);
+                }
+            }
+
+            return NotFound("La pizza non esiste!");
+        }
+
     }
 }
